@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Porsche 911 GT3 RS</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"npm run test
+    ></script>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <nav>
+        <a href="index.html">
+          <img
+            class="logo"
+            src="https://cdn.ui.porsche.com/porsche-design-system/crest/porsche-crest.0d0cc89@1x.webp"
+            alt="logo"
+        /></a>
+        <br />
+        <ul>
+          <li><a href="Design.html">Design</a></li>
+          <li><a href="Interiour.html">Intereriour</a></li>
+          <li><a href="Performance.html">Performance</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h1>Porsche 911 GT3 RS</h1>
+    <p class="preis_front">ab 250.000€</p>
+    <br />
+    <div class="model-container">
+      <model-viewer
+        src="porsche_gt3_rs.glb"
+        alt="3D_Model"
+        auto-rotate
+        rotation-per-second="15deg"
+        class="hover-effect"
+      >
+      </model-viewer>
+    </div>
+    <div id="space"></div>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <h3>Design</h3>
+          </td>
+          <td>
+            <img id="gallery-pics" src="1 auto.png" alt="Designr" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img id="gallery-pics" src="2. auto.png" alt="Interiour" />
+          </td>
+          <td>
+            <h3>Interiour</h3>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h3>Performance</h3>
+          </td>
+          <td>
+            <img id="gallery-pics" src="3. auto.png" alt="Performance" />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
