@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -7,7 +7,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script
       type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"npm run test
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
   </head>
   <body>
@@ -41,15 +41,20 @@
       </model-viewer>
     </div>
     <div id="space"></div>
-    <div>  
-      <table>
+    <div>
+      <table id="gallery">
         <tr>
           <td>
-              <h3 id="table-h">Design</h3>
-              <p><span class="label"></span></p>
+            <h3 id="table-h">Design</h3>
+            <p id="table-p">
+              Der Porsche 911 GT3 RS besticht durch sein aggressives und
+              aerodynamisches Design, das mit markanten Linien, einem imposanten
+              Heckspoiler und einem sportlichen Erscheinungsbild für pure
+              Rennsport-Ästhetik steht.
+            </p>
           </td>
           <td>
-            <img id="gallery-pics" src="1 auto.png" alt="Designr" />
+            <img id="gallery-pics" src="1 auto.png" alt="Design" />
           </td>
         </tr>
         <tr>
@@ -58,11 +63,23 @@
           </td>
           <td>
             <h3 id="table-h">Interiour</h3>
+            <p id="table-p">
+              Das Interieur des Porsche 911 GT3 RS kombiniert hochwertige
+              Materialien mit einem fahrerorientierten Layout, das sowohl
+              Komfort als auch eine klare Fokussierung auf Leistung und
+              Rennsport-Feeling bietet.
+            </p>
           </td>
         </tr>
         <tr>
           <td>
             <h3 id="table-h">Performance</h3>
+            <p id="table-p">
+              Die Performance des Porsche 911 GT3 RS ist beeindruckend, mit
+              einem leistungsstarken Motor und präziser Fahrdynamik, die ihn zu
+              einem der schnellsten und aufregendsten Sportwagen auf der
+              Rennstrecke machen.
+            </p>
           </td>
           <td>
             <img id="gallery-pics" src="3. auto.png" alt="Performance" />
@@ -70,5 +87,28 @@
         </tr>
       </table>
     </div>
+    <div id="space2"></div>
+      <footer>
+        <table id="table-in-footer">
+          <tr>
+            <td>
+              <p>
+                von Maciej Ciepiela
+                <br />
+                Informatik-LK
+                <br />
+                Friedric-Dessauer Gymnasium
+              </p>
+            </td>
+            <td>
+              <p>
+                Alle Inhalte sind urheberrechtlich geschützt, und eine Verwendung ohne
+                ausdrückliche Genehmigung ist nicht gestattet.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </footer>
+
   </body>
 </html>
