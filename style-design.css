@@ -107,6 +107,23 @@ model-viewer {
       rgba(0, 0, 0, 0) 100%);
   margin-left: 0px;
 }
+.Farbentabelle {
+  background-color: black;
+  border: 1;
+  border-collapse: collapse;
+  width: 100%;
+  padding: 1
+}
+.model-farben {
+  transition: transform 0.3s ease;
+  width: 40px;
+  height: auto;
+  display: block;
+}
+
+.model-farben:hover {
+  transform: scale(1.10);
+}
 
 td {
   transition: transform 1s ease;
