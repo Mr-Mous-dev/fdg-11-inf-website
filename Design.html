@@ -8,19 +8,17 @@
     <link href="style-gallery.css" rel="stylesheet" type="text/css" />
     <script
       type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-    ></script>
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   </head>
   <body>
-  <script src="gallery-script.js"></script>
+    <script src="gallery-script.js"></script>
     <div class="nav-bar">
       <nav>
         <a href="index.html">
           <img
             class="logo"
             src="https://cdn.ui.porsche.com/porsche-design-system/crest/porsche-crest.0d0cc89@1x.webp"
-            alt="logo"
-        /></a>
+            alt="logo" /></a>
         <br />
         <ul>
           <li><a href="Design.html">Design</a></li>
@@ -30,38 +28,48 @@
       </nav>
     </div>
     <h1>Porsche 911 GT3 RS</h1>
-    <model-viewer src="blau-auto.glb" shadow-intensity="1" ar camera-controls touch-action="pan-y" alt="Gallery">
-  
+    <model-viewer src="blau-auto.glb" shadow-intensity="1" ar camera-controls
+      touch-action="pan-y" alt="Gallery">
+
       <button slot="ar-button" id="ar-button">
         View in your space
       </button>
-    
+
       <div id="ar-prompt">
         <img src="porsche-logo.jpeg">
       </div>
-    
+
       <button id="ar-failure">
         AR is not tracking!
       </button>
-    
+
       <div class="slider">
         <div class="slides">
-          <button class="slide selected" onclick="switchSrc(this, 'blau-auto')" style="background-image: url('blau-auto.png');">
-    
-          </button><button class="slide" onclick="switchSrc(this, 'gelb-auto')" style="background-image: url('gelb-auto.png');">
-    
-          </button><button class="slide" onclick="switchSrc(this, 'grau-auto')" style="background-image: url('grau-auto.png');">
-          
-          </button><button class="slide" onclick="switchSrc(this, 'grün-auto')" style="background-image: url('grün-auto.png');">
-          
-          </button><button class="slide" onclick="switchSrc(this, 'lila-auto')" style="background-image: url('lila-auto.png');">  
-            
-          </button><button class="slide" onclick="switchSrc(this, 'rot-auto')" style="background-image: url('rot-auto.png');">    
+          <button class="slide selected" onclick="switchSrc(this, 'blau-auto')"
+            style="background-image: url('blau-auto.png');">
 
-          </button><button class="slide" onclick="switchSrc(this, 'schwarz-auto')" style="background-image: url('schwarz-auto.png');">    
+          </button><button class="slide" onclick="switchSrc(this, 'gelb-auto')"
+            style="background-image: url('gelb-auto.png');">
 
-          </button><button class="slide" onclick="switchSrc(this, 'weiß-auto')" style="background-image: url('weiß-auto.png');">     
-        </button></div>
+          </button><button class="slide" onclick="switchSrc(this, 'grau-auto')"
+            style="background-image: url('grau-auto.png');">
+
+          </button><button class="slide" onclick="switchSrc(this, 'grün-auto')"
+            style="background-image: url('grün-auto.png');">
+
+          </button><button class="slide" onclick="switchSrc(this, 'lila-auto')"
+            style="background-image: url('lila-auto.png');">
+
+          </button><button class="slide" onclick="switchSrc(this, 'rot-auto')"
+            style="background-image: url('rot-auto.png');">
+
+          </button><button class="slide"
+            onclick="switchSrc(this, 'schwarz-auto')"
+            style="background-image: url('schwarz-auto.png');">
+
+          </button><button class="slide" onclick="switchSrc(this, 'weiß-auto')"
+            style="background-image: url('weiß-auto.png');">
+          </button></div>
       </div>
     </model-viewer>
   </body>

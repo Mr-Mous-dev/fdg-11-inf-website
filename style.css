@@ -17,6 +17,7 @@ p {
 a {
   text-decoration: none;
 }
+
 .logo {
   display: block;
   width: auto;
@@ -110,6 +111,7 @@ model-viewer {
   width: 100%;
   padding: 1;
 }
+
 #gallery-links {
   text-decoration: none;
   color: white;
@@ -160,7 +162,8 @@ footer {
 #table-in-footer {
   width: 100%;
 }
-.footer-information{
+
+.footer-information {
   text-align: center;
   width: 100%;
 }
