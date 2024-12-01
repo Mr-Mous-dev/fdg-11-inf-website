@@ -5,29 +5,14 @@
     <meta name="viewport" content="width=device-width" />
     <title>Porsche 911 GT3 RS</title>
     <link href="style-design.css" rel="stylesheet" type="text/css" />
+    <link href="style-gallery.css" rel="stylesheet" type="text/css" />
     <script
       type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
-    <script type="module">
-      const modelViewer = document.querySelector("model-viewer");
-    
-      window.switchSrc = (element, name) => {
-        const base = "./" + name;
-        modelViewer.src = base + '.glb';
-        modelViewer.poster = base + '.png';
-        const slides = document.querySelectorAll(".slide");
-        slides.forEach((element) => {element.classList.remove("selected");});
-        element.classList.add("selected");
-      };
-    
-      document.querySelector(".slider").addEventListener('beforexrselect', (ev) => {
-        // Keep slider interactions from affecting the XR scene.
-        ev.preventDefault();
-      });
-    </script>
   </head>
   <body>
+  <script src="gallery-script.js"></script>
     <div class="nav-bar">
       <nav>
         <a href="index.html">
@@ -45,27 +30,14 @@
       </nav>
     </div>
     <h1>Porsche 911 GT3 RS</h1>
-    <p class="preis_front">ab 250.000€</p>
-    <br />
-    <div class="model-container">
-      <model-viewer
-        src="porsche911gt3rs-gelb.glb"
-        alt="3D_Model"
-        auto-rotate
-        rotation-per-second="15deg"
-        class="model-upscale"
-      >
-      </model-viewer>
-    </div>
-    <div id="space"></div>
-
-    <model-viewer src="porsche911gt3rs-blau.glb" poster="blau-auto.png" shadow-intensity="1" ar camera-controls touch-action="pan-y" alt="model-carusel">
+    <model-viewer src="blau-auto.glb" shadow-intensity="1" ar camera-controls touch-action="pan-y" alt="Gallery">
   
       <button slot="ar-button" id="ar-button">
         View in your space
       </button>
     
       <div id="ar-prompt">
+        <img src="porsche-logo.jpeg">
       </div>
     
       <button id="ar-failure">
@@ -74,93 +46,23 @@
     
       <div class="slider">
         <div class="slides">
-          <button class="slide selected" onclick="switchSrc(this, 'Blau')" style="background-image: url('blau-auto.png');">
-          </button><button class="slide" onclick="switchSrc(this, 'Gelb')" style="background-image: url('gelb-auto.png');">
-          </button><button class="slide" onclick="switchSrc(this, 'Grau')" style="background-image: url('grau-auto.png');">
-          </button><button class="slide" onclick="switchSrc(this, 'Grün')" style="background-image: url('grün-auto.png');">
-          </button><button class="slide" onclick="switchSrc(this, 'Lila')" style="background-image: url('lila-auto.png');">
-          </button><button class="slide" onclick="switchSrc(this, 'Grün')" style="background-image: url('grün-auto.png');">
-          </button><button class="slide" onclick="switchSrc(this, 'Rot')" style="background-image: url('rot-auto.png');">
-          </button><button class="slid  switchSrc(this, 'Schwarz')" style="background-image: url('schwarz-auto.png');">
+          <button class="slide selected" onclick="switchSrc(this, 'blau-auto')" style="background-image: url('blau-auto.png');">
+    
+          </button><button class="slide" onclick="switchSrc(this, 'gelb-auto')" style="background-image: url('gelb-auto.png');">
+    
+          </button><button class="slide" onclick="switchSrc(this, 'grau-auto')" style="background-image: url('grau-auto.png');">
+          
+          </button><button class="slide" onclick="switchSrc(this, 'grün-auto')" style="background-image: url('grün-auto.png');">
+          
+          </button><button class="slide" onclick="switchSrc(this, 'lila-auto')" style="background-image: url('lila-auto.png');">  
+            
+          </button><button class="slide" onclick="switchSrc(this, 'rot-auto')" style="background-image: url('rot-auto.png');">    
 
+          </button><button class="slide" onclick="switchSrc(this, 'schwarz-auto')" style="background-image: url('schwarz-auto.png');">    
+
+          </button><button class="slide" onclick="switchSrc(this, 'weiß-auto')" style="background-image: url('weiß-auto.png');">     
         </button></div>
       </div>
     </model-viewer>
-
-
-
-
-    <!--<table class="Farbentabelle">
-        <tr>
-            <td>
-                <h3>Gelb</h3>
-            </td>
-            <td>
-                <h3>Rot</h3>
-            </td>
-            <td>
-                <h3>Grün</h3>
-            </td>
-            <td>
-                <h3>Grau</h3>
-            </td>
-            <td>
-                <h3>Weiß</h3>
-            </td>
-            <td>
-                <h3>Schwarz</h3>
-            </td>
-            <td>
-                <h3>Lila</h3>
-            </td>
-            <td>
-                <h3>Blau</h3>
-            </td>
-            
-        </tr>
-        <tr>
-          <td>
-            <div class="model-gallery">
-              <model-viewer
-                src="porsche911gt3rs-gelb.glb"
-                alt="3D_Model"
-                class="model-farben"
-              >
-              </model-viewer>
-            </div>
-          </td>
-          <td>
-            <div class="model-gallery">
-              <model-viewer
-                src="porsche911gt3rs-rot.glb"
-                alt="3D_Model"
-                class="model-farben
-          </td>
-        </tr>
-    </table>-->
-  <footer>
-        <table id="table-in-footer">
-          <tr>
-            <td class="footer-information">
-              <p>
-                von Maciej Ciepiela
-                <br />
-                Informatik-LK
-                <br />
-                Friedric-Dessauer Gymnasium
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td class="footer-information">
-              <p>
-                Alle Inhalte sind urheberrechtlich geschützt, und eine Verwendung ohne
-                ausdrückliche Genehmigung ist nicht gestattet.
-              </p>
-            </td>
-          </tr>
-        </table>
-      </footer>
-
   </body>
 </html>
