@@ -12,12 +12,12 @@ body {
 }
 
 button {
-  height: 100px;
-  width: 200px;
+  height: 50px;
+  width: 100px;
   font-size: 20px;
   background-color: #585858;
   border-radius: 25px;
-  padding: 20px;
+  padding: 0;
   transition: 0.3s;
 }
 
@@ -33,11 +33,11 @@ button:hover {
 
 .container {
   text-align: center;
-  display: flex; /* Flexbox für die Container-Zentrierung */
-  flex-direction: column; /* Sicherstellen, dass alles vertikal angeordnet ist */
-  justify-content: center; /* Zentrierung horizontal */
-  align-items: center; /* Zentrierung vertikal */
-  height: 100vh; /* Höhe des Containers auf 100% der Viewport-Höhe */
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
 }
 
 .loader {
